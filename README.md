@@ -3,9 +3,9 @@
 Get all info about class from doc block comments using Reflector classes in PHP
 Can be used for incpect any libraries, for generation documentation and incentive to write informational comments.
 
-#### Usage
+## Usage
 
-### static
+#### static
 
 ```
 doc::init();
@@ -13,16 +13,16 @@ include 'someclass.php';
 echo '<pre>' . print_r(doc::toArray(), true) . '</pre>';
 ```
 
-### object
+#### object
 
 ```
 $doc = new doc(['doc','pdo']); //$doc = new doc('doc');
 echo $doc->toHtml();
 ```
 
-## OR with options (all data and without formatting)
+### OR with options (all data and without formatting)
 
-### static
+#### static
 
 ```
 doc::init([
@@ -41,7 +41,7 @@ include 'someclass.php';
 echo '<pre>' . print_r(doc::toJson(), true) . '</pre>';
 ```
 
-### object
+#### object
 
 ```
 $doc = new doc(['doc','pdo'],[
@@ -59,7 +59,7 @@ $doc = new doc(['doc','pdo'],[
 echo $doc->toHtml();
 ```
 
-#### Result
+### Result
 
 ```
 <?php
